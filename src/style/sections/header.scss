@@ -1,0 +1,159 @@
+//DEFAULT STYLE//
+.top__line{
+	position: relative;
+	//background: #fff;
+	.ulmart__logo{
+		float: left;
+		margin-top: 24px;
+		@include MQ(sm) {
+			margin-left: 10px;
+		}
+		@include MQ(xs) {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-left: 0;
+		}
+	}
+	.ulmart__shop{
+		display: block;
+    float: right;
+    font-size: .75em;
+    background: #fff;
+    color: #d81e26;
+    text-align: center;
+    padding: 5px 50px;
+    /* border-radius: 30px; */
+    margin: 23px 0px 17px 0;
+    /* box-shadow: 1px 1px 1px rgba(142,27,52,.5); */
+    /* border: 1px solid #000; */
+		@include MQ(sm) {
+			margin-right: 10px;
+		}
+		@include MQ(xs) {
+			float: none;
+			font-size: 1em;
+			margin-right: 0;
+		}
+		&:hover{
+			background: #fff;
+			color:#000; 
+			// background-color: #ff5534;
+			// background-image: -webkit-linear-gradient(#ff5534 0,#e4003a 100%);
+			// background-image: linear-gradient(#ff5534 0,#e4003a 100%);
+		}
+	}
+}
+
+.banner-credit{
+	display: block;
+	@include MQ(xs){
+		display: none;
+	}
+}
+
+.banner-credit-mob{
+	display: none;
+	@include MQ(xs){
+		display: block;
+	}
+}
+
+.top__banner{
+	position: relative;
+	padding: 60px 0 70px 0;
+	@include MQ(xs){
+		padding: 20px 0 40px;
+	}
+	.top__banner__img{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.header{
+	position: relative;
+}
+
+.header__banner{
+	display: block;
+	margin: 0 auto;
+}
+
+.header__title{
+	font-size: 66px;
+	color:#fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.title{
+	font-size: em($h1FZ);
+}
+
+.title__desc{
+	font-size: em($h1desc);
+}
+
+.title-block{
+	@include clearfix;
+	position: relative;
+	padding: 35px 10px 35px 10px;
+	@include MQ(xs){
+		padding: 0 10px;
+	}
+	&-left{
+		float: left;
+		margin-right: 70px;
+		&__title{
+			font-size: 97px;
+			color: #fff;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+		&__sub-title{
+			font-size: 40px;
+			font-weight: normal;
+			@extend .title-block-left__title;
+		}
+	}
+	&-right{
+		@include clearfix;
+		float: left;
+		&__item{
+			float: left;
+			margin-right: 50px;
+			&-top{
+				font-size: 109px;
+				color: #fff;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1;
+				text-align: center;
+				position: relative;
+				&:after{
+					content: "%";
+					display: block;
+					color: #fff;
+					font-size: 37px;
+			    position: absolute;
+			    top: 10px;
+			    right: 10px;
+			    text-shadow: 1px 3px 3px #d92026;
+				}
+				&-after{
+					&:after{
+						display: none;
+					}
+				}
+			}
+			&-bottom{
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+}

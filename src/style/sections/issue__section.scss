@@ -1,0 +1,38 @@
+.issue__section{
+	position: relative;
+	background: #fff;
+	@include clearfix;
+	padding-bottom: 70px;
+}
+
+.issue__title{
+	font-size: em($h2FZ);
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	padding: 40px 0 60px 0;
+	@include MQ(xs){
+		padding: 20px 0;
+	}
+}
+
+.issue__item{
+	text-align: center;
+	color: #000;
+	&__img img{
+		display: block;
+		margin: 0 auto;
+	}
+	&__title{
+		font-size: 26px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__text{
+		font-size: 19px;
+		span{
+			font-weight: bold;
+		}
+	}
+}

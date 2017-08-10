@@ -1,0 +1,218 @@
+include blocks/head-service/head
+include common/mixins.jade
+
+body
+	.layout_center_wrapper-project
+		+top-line()
+		+top-banner()
+		//- section.issue__section
+			.container
+				.row
+					h2.issue__title
+						|Оформить рассрочку
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.issue__item
+							.issue__item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/issue1.png", alt="оформление")
+							.issue__item__title
+								|удобно
+							.issue__item__text
+								|Введите промокод&nbsp;
+								span 006
+								br
+								|&nbsp;на этапе оформления заказа
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.issue__item
+							.issue__item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/issue2.png", alt="оформление")
+							.issue__item__title
+								|быстро
+							.issue__item__text
+								|Узнаёте о решение банка 
+								br
+								|уже в течение 1&nbsp;часа 
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.issue__item
+							.issue__item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/issue3.png", alt="оформление")
+							.issue__item__title
+								|выгодно
+							.issue__item__text
+								|Рассрочка на 6&nbsp;месяцев 
+								br
+								|без процентов и переплат
+		section.make__section
+			h2.make__title
+				|Как купить телевизор в рассрочку
+			.tabbed
+				.container
+					.row
+						.col-lg-2.col-lg-offset-4.col-md-5.col-md-offset-1.col-sm-6.col-xs-12.np
+							.tabbed__wrap
+								input#tab-nav-1(type='radio', name='tabs')
+								label(for='tab-nav-1') ОФФЛАЙН
+						.col-lg-2.col-md-5.col-sm-6.col-xs-12.np
+							.tabbed__wrap
+								input#tab-nav-2(type='radio', name='tabs', checked='')
+								label(for='tab-nav-2') ОНЛАЙН
+							
+		.tabs__wrapper.tabs__wrapper__online
+			.container
+				.row
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod
+							.tabs__item__img
+								|1
+							.tabs__item__text
+								b Выберите телевизор со значком рассрочки
+								br
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod
+							.tabs__item__img
+								|2
+							.tabs__item__text
+								b Выберите «Самовывоз»
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item
+							.tabs__item__img
+								|3
+							.tabs__item__text
+								b Введите промокод 
+								span 006&nbsp;
+								br
+								|на этапе подтверждения заказа и дождитесь звонка банка для заполнения анкеты по телефону.
+				.text__info
+					|Проверьте, пожалуйста, актуальность телефона, указанного 
+					br
+					|в личном кабинете, иначе мы не сможем с вами связаться.
+				.row
+					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
+			.screen
+				span x
+		.tabs__wrapper.tabs__wrapper__offline
+			.container
+				.row
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod
+							.tabs__item__img
+								|1
+							.tabs__item__text
+								b Оформите заказ на товар, отмеченный значком 
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
+								br
+								|и распечатайте чек на оплату.
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod
+							.tabs__item__img
+								|2
+							.tabs__item__text
+								b Подайте заявку в кредитном отделе 
+								br
+								|(подать заявку можно в кредитном отделе центра исполнения заказов Юлмарт (ЦИЗ), при себе необходимо иметь паспорт).
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item
+							.tabs__item__img
+								|3
+							.tabs__item__text
+								b Забирайте покупку.
+				.row
+					.row
+					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12
+						a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12
+						a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
+		//- .btn__wrapper
+		//- 	.container
+		//- 		.row
+		//- 			.col-lg-2
+		//- 			.col-lg-4.col-md-6.col-sm-6.col-xs-12
+		//- 				a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
+		//- 			.col-lg-4.col-md-6.col-sm-6.col-xs-12
+		//- 				a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
+		//- 			.col-lg-2
+		section.section__goods
+			.container
+				.row
+					h2.products__title
+						|Лучшие модели телевизоров в рассрочку
+					+grid-4()
+						each item, number in dataTV.slice(0,1)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(1,2)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(2,3)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(3,4)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(4,5)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(5,6)
+							+goods-tv(item)
+					+grid-4()
+						each item, number in dataTV.slice(6,7)
+							+goods-tv(item)
+		.btn__wrapper
+			.container
+				.row
+					.col-lg-2
+					.col-lg-4.col-md-6.col-sm-6.col-xs-12
+						a(href="http://www.ulmart.ru/Kredit_006", target="_blank", class="btn__full") Посмотреть все товары
+					.col-lg-4.col-md-6.col-sm-6.col-xs-12
+						a(href="#", target="_blank", class="btn__back", id="go-back2") Вернуться к заказу
+					.col-lg-2
+				.row
+					.info-text__center
+						|Ищите телевизор в рассрочку? Покупайте на Юлмарте, выбирайте из большого количества предложений. 
+						br
+						|Найдите свой ТВ и получите его в рассрочку!
+				
+		
+		section.info
+			.container
+				.row
+					.info-text
+						|Ритм жизни не всегда позволяет отправиться на просмотр фильма в кинотеатр или собраться с друзьями в пабе за просмотром матча любимой команды. Мы давно привыкли, что телевизор помогает решить эти и многие другие вопросы: чем занять детей, как провести вечер, узнать, что происходит в мире. И конечно хочется, чтобы телевизор отвечал последним требованиям науки и техники: имел четкую картинку в высоком разрешении, доступ в интернет, мог служить монитором для компьютера. Набор этих и других обязательных опций может обойтись дорого, но всегда можно приобрести телевизоры в рассрочку в магазине.
+					.info-text
+						|Для покупателей с большими телевизионными планами мы предлагаем телевизор в рассрочку в Юлмарте. 
+					.info-title
+						|Вы можете купить телевизор в рассрочку и сразу наслаждаться всеми его преимуществами. Главное с основными характеристиками: 
+					ol.info-list
+						li.info-item Размер телеэкрана подбирают под габариты комнаты, чтобы расстояние было удобным для просмотра;
+						li.info-item От разрешения экрана и типа его изготовления зависит качество изображения. Сейчас актуальны жидкие кристаллы в основе телеизображения;
+						li.info-item Наличие Smart TV и доступ к Wi-Fi сейчас необходимость, почти для всех. С количеством HDMI-портов лучше перестраховаться, ведь сложно предугадать какие еще устройства будет подключены к вашему основному домашнему TV;
+
+					.info-text
+						|Итак, вы можете купить ТВ в рассрочку и стать обладателем настоящего мультимедийного друга и помощника. В каталоге нашего интернет магазина вы можете выбрать и купить ТВ, с современным с более современным LED-экраном, смарт-ТВ, хорошей акустикой без переплат: воспользовавшись нашим предложением по акции, вы получаете доступ ко всем новинкам техники без лишних забот.
+					.info-text
+						|Удачных покупок!
+		.hidden-wrap
+			.container
+				.row
+					.hidden-wrap__btn Показать ещё
+				//- .info-btn-wrapper
+				//- 	.row
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Телевизор в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Компьютер в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Стиральная машина в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Велосипед в рассрочку
+
+
+		
+			
+	+footer-text()
+
+
+include blocks/footer-service/footer-service

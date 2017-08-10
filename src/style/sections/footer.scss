@@ -1,0 +1,24 @@
+.footer{
+	flex: 0 0 auto;
+	position: relative;
+
+}
+
+.footer__block{
+	padding: 45px 0;
+}
+
+.footer__text{
+	font-size: 14px;
+	color: $footerText;
+	text-align: left;
+	line-height: 1.2;
+	a{
+		font-size: 14px;
+		color: $footerText;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

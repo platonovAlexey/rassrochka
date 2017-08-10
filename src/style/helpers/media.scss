@@ -1,0 +1,131 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+	.tabs__item.tabs__item--mod:after{
+		display: none;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.issue__section .container .row .col-xs-12{
+		width: 33%;
+	}
+	.tabs__wrapper.tabs__wrapper__online .container .row .col-xs-12{
+		width: 33%;
+	}
+	.tabs__wrapper.tabs__wrapper__offline .container .row .col-xs-12{
+		width: 33%;
+	}
+	.tabs__wrapper.tabs__wrapper__online .container .row .col-xs-12.nm{
+		width: 100%;
+	}
+	.tabs__wrapper.tabs__wrapper__offline .container .row .col-xs-12.nm{
+		width: 100%;
+	}
+	.title-block-left{
+		margin-right: 0;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media only screen and (max-width : 600px){
+	.issue__section .container .row .col-xs-12{
+		width: 100%;
+	}
+	.issue__item, .tabs__item{
+		margin-bottom: 20px;
+	}
+	.tabs__wrapper.tabs__wrapper__online .container .row .col-xs-12{
+		width: 100%;
+	}
+	.tabs__wrapper.tabs__wrapper__offline .container .row .col-xs-12{
+		width: 100%;
+	}
+	.tabs__item.tabs__item--mod:after{
+		display: none;
+	}
+	.btn__back, .btn__full{
+		margin: 10px 0;
+	}
+
+	.hidden-wrap__btn{
+		margin: 0 auto 30px auto !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
