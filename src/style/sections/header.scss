@@ -157,3 +157,9 @@
 		}
 	}
 }
+
+.ulmart__shop.ulmart__shop-intel{
+	@extend .ulmart__shop;
+	background: #f5cd06;
+	color: #000;
+}

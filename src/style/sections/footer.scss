@@ -1,7 +1,11 @@
 .footer{
 	flex: 0 0 auto;
 	position: relative;
-
+	background: -webkit-linear-gradient(0deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background: -moz-linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background: linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background-position: 50% 50%;
+	transform-origin: 50% 50% 0;
 }
 
 .footer__block{
@@ -21,4 +25,13 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+.footer.footer-intel{
+	@extend .footer;
+	background: -webkit-linear-gradient(-90deg, #006ac2 0, #004a87 100%)!important;
+	background: -moz-linear-gradient(180deg, #006ac2 0, #004a87 100%)!important;
+	background: linear-gradient(180deg, #006ac2 0, #004a87 100%)!important;
+	background-position: 50% 50%;
+	transform-origin: 50% 50% 0;
 }

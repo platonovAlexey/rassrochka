@@ -52,11 +52,22 @@ body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	background: -webkit-linear-gradient(0deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
-	background: -moz-linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
-	background: linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
-	background-position: 50% 50%;
-	transform-origin: 50% 50% 0;
+	
+}
+
+body #body-intel{
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-weight: normal;
+	font-size: $bodyFZ;
+	line-height: $bodyLH;
+	min-width: 320px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	
 }
 
 .layout_center_wrapper-project {
@@ -67,7 +78,20 @@ body{
 	//min-height: 100%;
 	overflow: hidden;
 	flex: 1 0 auto;
+	background: -webkit-linear-gradient(0deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background: -moz-linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background: linear-gradient(90deg, rgb(242,101,35) 0, rgb(215,26,38) 100%);
+	background-position: 50% 50%;
+	transform-origin: 50% 50% 0;
+}
 
+.layout_center_wrapper-project.layout_center_wrapper-project-intel{
+	@extend .layout_center_wrapper-project;
+	background: -webkit-linear-gradient(-90deg, #006ac2 0, #004a87 100%)!important;
+	background: -moz-linear-gradient(180deg, #006ac2 0, #004a87 100%)!important;
+	background: linear-gradient(180deg, #006ac2 0, #004a87 100%)!important;
+	background-position: 50% 50%;
+	transform-origin: 50% 50% 0;
 }
 
 //Внутренний контейнер
