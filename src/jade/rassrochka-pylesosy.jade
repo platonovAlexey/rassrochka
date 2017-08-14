@@ -43,7 +43,7 @@ body
 								|без процентов и переплат
 		section.make__section
 			h2.make__title
-				|Как купить товар по акции 
+				|Как купить велосипед в рассрочку
 			.tabbed
 				.container
 					.row
@@ -64,7 +64,7 @@ body
 							.tabs__item__img
 								|1
 							.tabs__item__text
-								b Выберите товар со значком
+								b Выберите пылесос со значком рассрочки
 								br
 								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
 					.col-lg-4.col-md-4.col-sm-4.col-xs-12
@@ -138,28 +138,28 @@ body
 			.container
 				.row
 					h2.products__title
-						|Лучшие товары акции 
+						|Лучшие модели пылесосов в рассрочку
 					+grid-4()
-						each item, number in dataMain.slice(0,1)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(0,1)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(1,2)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(1,2)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(2,3)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(2,3)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(3,4)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(3,4)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(4,5)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(4,5)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(5,6)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(5,6)
+							+goods-pylesosy(item)
 					+grid-4()
-						each item, number in dataMain.slice(6,7)
-							+goods-main(item)
+						each item, number in dataPylesosy.slice(6,7)
+							+goods-pylesosy(item)
 		.btn__wrapper
 			.container
 				.row
@@ -170,43 +170,48 @@ body
 						a(href="#", target="_blank", class="btn__back", id="go-back2") Вернуться к заказу
 					.col-lg-2
 				.row
-					.hidden-wrap__btn Подробнее
+					.info-text__center
+						|Ищите пылесос в рассрочку? Покупайте на Юлмарте, выбирайте из большого количества предложений.
+						br
+						|Найдите свой пылесос и получите его в рассрочку!
 		
 		section.info
 			.container
 				.row
-					.info-text
-						|Мы знаем, как это бывает: иногда желание приобрести новый телефон или купить в квартиру новую технику приходит раньше, чем зарплата. Не берите дорогущие кредиты в магазинах электроники, ведь Юлмарт уже приготовил для вас новую акцию! Для покупателей с большими планами мы предоставляем технику и электронику в рассрочку без процентов и без переплат.
-					.info-title
-						|Вы можете оформить беспроцентную рассрочку на технику в следующих категориях:
-					ol.info-list
-						li.info-item Смарфтоны
-						li.info-item Ноутбуки
-						li.info-item Холодильники
-						li.info-item Телевизоры
-						li.info-item Стиральные машины 
-						p.info-item-text и многие другие товары.
-					.info-text
-						|Купить товар в рассрочку на 
-						a(href="https://www.ulmart.ru/", target="_blank", class="info-text__link") ulmart.ru
-						|  легко: вы можете оформить договор с банком как онлайн, так и в любом центре исполнения заказов. Мы предоставляем более выгодные условия, чем большинство магазинов техники: 6 месяцев без переплат, процентов и первого взноса. Полный список товаров, которые вы можете взять в рассрочку, смотрите на 
-						a(href="https://www.ulmart.ru/", target="_blank", class="info-text__link") ulmart.ru
-						|.
-					.info-text
-						|Удачных покупок!
-				.info-btn-wrapper
-					.row
-						.col-lg-3.col-md-3.col-sm-6.col-xs-12
-							a(href="https://www.ulmart.ru/dynamic/page/rassrochka-komputery", target="_blank", class="info-link") Компьютер в рассрочку
-						.col-lg-3.col-md-3.col-sm-6.col-xs-12
-							a(href="https://www.ulmart.ru/dynamic/page/rassrochka-stiralnye-mashiny", target="_blank", class="info-link") Стиральная машина в рассрочку
-						.col-lg-3.col-md-3.col-sm-6.col-xs-12
-							a(href="https://www.ulmart.ru/dynamic/page/rassrochka-velosipedy", target="_blank", class="info-link") Велосипед в рассрочку
-						.col-lg-3.col-md-3.col-sm-6.col-xs-12
-							a(href="https://www.ulmart.ru/dynamic/page/rassrochka-pylesosy", target="_blank", class="info-link") Пылесос в рассрочку
-					.row
-						.col-lg-3.col-md-3.col-sm-6.col-xs-12
-							a(href="https://www.ulmart.ru/dynamic/page/rassrochka-holodilniki", target="_blank", class="info-link") Холодильник в рассрочку
+					//- .info-text
+					//- 	|Если вы хотите долго гнать велосипед, и не только в полях, а, скажем и в других красивых и диких местах, важно основательно подойти к выбору подходящей модификации. Да и простой велик для города должен соответствовать вашим личным требованиям и ожиданиям. Часто бывает так, что стоимость типовой модели, продающейся в обычных гипермаркетах, очень привлекательна, но требуется потратить еще не мало средств на оснащение двухколесного друга. А иногда хочется чего-то большего, приобрести модель известного бренда или настоящий веловнедорожник. Что делать если цена кусается, а приключения зовут? Решение есть: купить велосипед в рассрочку по акции на 
+					//- 	a(href="https://www.ulmart.ru/", target="_blank", class="info-text__link") ulmart.ru. 
+					//- .info-text
+					//- 	|Покупая велосипеды в рассрочку не ограничивайте свой выбор определенной моделью или диапазоном цен, вы можете купить в рассрочку велик, о котором всегда мечтали: горный, городской универсальный, шоссейный или любой другой. Еще не думали про складные модели? Они всегда есть в каталоге нашего интернет-магазина. А если желающих участвовать в велопробегах целая семья можно купить велики в рассрочку для всех!
+					//- .info-text
+					//- 	|Чтобы покупка велосипеда в рассрочку была выгодной со всех сторон нужно внимательно отнестись к выбору именно «вашей» и подходящей комплектации.
+					//- .info-title
+					//- 	|Обратите внимание на базовые характеристики:
+					//- ol.info-list
+					//- 	li.info-item Количество доступных скоростей;
+					//- 	li.info-item Размер рамы;
+					//- 	li.info-item Исполнение тормозной системы (дисковая или ободная);
+					//- 	li.info-item Количество амортизаторов (1 или 2);
+					//- 	li.info-item Диаметр колёс;
+					//- .info-text
+					//- 	|Если у вас возникнут какие-либо вопросы или сложности с выбором – обращайтесь к нашим консультантам. Мы всегда готовы помочь с оформлением покупки и подбором оптимального варианта велосипеда, исходя из ваших пожеланий.
+					//- .info-text
+					//- 	|Удачных покупок!
+
+		//- .hidden-wrap
+		//- 	.container
+		//- 		.row
+		//- 			.hidden-wrap__btn Показать ещё
+				//- .info-btn-wrapper
+				//- 	.row
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Телевизор в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Компьютер в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Стиральная машина в рассрочку
+				//- 		.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				//- 			a(href="#", target="_blank", class="info-link") Велосипед в рассрочку
 
 
 		
