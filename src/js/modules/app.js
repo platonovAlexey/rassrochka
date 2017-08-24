@@ -1,4 +1,4 @@
-console.log('Hellow World');
+// console.log('Hellow World');
 
 // $(document).ready(function() { 
 // 	$('.hidden-wrap__btn').click(function(e) {

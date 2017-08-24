@@ -27,7 +27,7 @@
 	&-list{
 		margin-left: 20px;
 		list-style: disc;
-		color: #ec3e0f;
+		color: #000000;
 		font-size: 20px;
 	}
 	&-item{
@@ -52,6 +52,14 @@
 	}
 }
 
+.text__info--link{
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+
 .hidden-wrap__btn{
 	background-color: #e8e8e8;
 	text-align: center;
@@ -67,4 +75,8 @@
 
 .hidden-wrap {
 	background: #e8e8e8;
+}
+
+.text__info--link {
+	color: #f26523;
 }
