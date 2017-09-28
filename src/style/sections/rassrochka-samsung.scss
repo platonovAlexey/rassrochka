@@ -1,0 +1,168 @@
+
+
+.ulmart__logo.ulmart__shop-samsung{
+	margin-top: 28px;
+}
+
+.ulmart__shop.ulmart__shop-samsung{
+	background: none !important;
+	&:hover{
+		background: none !important;
+	}
+}
+
+.samsung-phone-banner{
+	display: block;
+	margin: 50px auto 0px auto;
+}
+
+.top__banner.top__banner-samsung{
+	padding-bottom: 0;
+}
+
+.make__title.make__title-samsung{
+	color: #214694;
+	font-size: 35px;
+	font-weight: 500;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+
+.tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung__left > label{
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+}
+.tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung__right > label{
+	border-top-right-radius:30px;
+	border-bottom-right-radius:30px;
+}
+
+.tabbed__wrap.tabbed__wrap-samsung > label:hover,
+.tabbed__wrap.tabbed__wrap-samsung > input:checked + label {
+	background: none;
+	border: 1px solid #214694;
+	color: #214694;
+}
+
+.tabbed__wrap.tabbed__wrap-samsung > label{
+	background: none;
+	border: 1px solid #214694;
+	color: #214694;
+}
+
+.tabbed__wrap.tabbed__wrap-samsung > label:hover,
+.tabbed__wrap.tabbed__wrap-samsung > input:checked + label {
+	background: #214694;
+	color: #ffffff;
+	text-align: center;
+}
+
+.tabs__item__img.tabs__item__img-samsung{
+	background: #214694;
+}
+
+.text__info--link.text__info--link__samsung{
+	color: #214694;
+}
+
+.section__goods.section__goods-samsung{
+	background: #fff;
+}
+
+.products__title.products__title-samsung{
+	color: #214694;
+	font-size: 35px;
+	font-weight: 500;
+	margin: 20px 0;
+}
+
+.btn__full.btn-samsung-border{
+	background: none;
+	border: 1px solid #214694;
+	color: #214694;
+	border-radius: 30px;
+	&:hover{
+		background: #214694;
+		border: 1px solid #214694;
+		color: #fff;
+	}
+}
+
+.btn__back-samsung.btn-samsung-noborder{
+	background: #214694;
+	border: 1px solid #214694;
+	color: #fff;
+	border-radius: 30px;
+	font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+  margin: 45px 0 30px;
+	&:hover{
+		background: none;
+		border: 1px solid #214694;
+		color: #214694;
+	}
+}
+
+.btn__wrapper.btn__wrapper-samsung{
+	background: #fff;
+}
+
+.footer.footer-samsung{
+	background: #214694;
+}
+
+.goods__item.goods__item__auction.goods__item-samsung{
+	box-shadow: 4px 0 20px rgba(0,0,0,.2);
+
+	&:hover{
+
+	}
+}
+.goods__link.goods__link-samsung{
+	border-radius: 30px;
+	width: 80%;
+	margin: 0 auto 20px auto;
+	background: #214694;
+	border: 1px solid #214694;
+	color: #fff;
+	&:hover{
+		background: none;
+		border: 1px solid #214694;
+		color: #214694 !important;
+	}
+}
+
+.info-samsung, .hidden-wrap.hidden-wrap-samsung{
+	background: #fff;
+}
+
+.hidden-wrap__btn.hidden-wrap__btn-samsung{
+	border-radius: 30px;
+	background: #214694;
+	border: 1px solid #214694;
+	color: #fff;
+	&:hover{
+		background: none;
+		border: 1px solid #214694;
+		color: #214694 !important;
+	}
+}
+
+.goods__start.goods__start-samsung{
+	color: #214694;
+}
+
+.info-list.info-list-samsung{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.goods__picture.goods__picture-samsung{
+	margin: 50px auto;
+}
+
+.goods__name.goods__name-samsung{
+	font-size: 16px;
+}

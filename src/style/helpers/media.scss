@@ -13,7 +13,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.tabs__item.tabs__item--mod.tabs__item--mod-intel:after{
+		display: none;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -94,7 +96,18 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+	.products__title, .products__title.products__title-samsung{
+		font-size: 28px;
+	}
+	.tabs__item.tabs__item--mod.tabs__item--mod-intel:after{
+		display: none;
+	}
+	.tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung__right>label, .tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung__left>label{
+		border-radius: 0;
+	}
+	.info-text__center{
+		padding: 0 5px;
+	}
 }
 
 /* Custom, iPhone Retina */

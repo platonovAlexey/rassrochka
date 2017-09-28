@@ -1,0 +1,190 @@
+include blocks/head-service/head
+include common/mixins.jade
+
+body#body-samsung
+	.layout_center_wrapper-project.layout_center_wrapper-project-samsung
+		.top__line
+			.container
+				.row
+					a(class="ulmart__logo ulmart__shop-samsung" href="https://www.ulmart.ru/", target="_blank")
+						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/ulmart-logo-red-samsung.png", alt="logo")
+					a(class="ulmart__shop ulmart__shop-samsung" href="http://www.samsung.com/ru/", target="_blank")
+						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/logo-samsung.png", alt="")
+		section.top__banner.top__banner-samsung
+			.container
+				.row
+					.title-block
+						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-banner-samsung.png", alt="banner", class="banner-credit")
+						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/samsung-phone-banner.jpg", alt="banner", class="samsung-phone-banner")
+		section.make__section
+			h1.make__title.make__title-samsung
+				|Как купить товар по акции «Кредит без переплат 0•0•12»
+			.tabbed
+				.container
+					.row
+						.col-lg-2.col-lg-offset-4.col-md-5.col-md-offset-1.col-sm-6.col-xs-12.np
+							.tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung.tabbed__wrap-samsung__left
+								input#tab-nav-1(type='radio', name='tabs')
+								label(for='tab-nav-1') ОФФЛАЙН
+						.col-lg-2.col-md-5.col-sm-6.col-xs-12.np
+							.tabbed__wrap.tabbed__wrap-intel.tabbed__wrap-samsung.tabbed__wrap-samsung__right
+								input#tab-nav-2(type='radio', name='tabs', checked='')
+								label(for='tab-nav-2') ОНЛАЙН
+							
+		.tabs__wrapper.tabs__wrapper__online
+			.container
+				.row
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod.tabs__item--mod-intel
+							.tabs__item__img.tabs__item__img-samsung
+								|1
+							.tabs__item__text
+								b Выберите товар со значком «0012».
+								br
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze-samsung.png", alt="")
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod.tabs__item--mod-intel
+							.tabs__item__img.tabs__item__img-samsung
+								|2
+							.tabs__item__text
+								b Выберите «Самовывоз».
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item
+							.tabs__item__img.tabs__item__img-samsung
+								|3
+							.tabs__item__text
+								b Выберите «Купить в кредит»
+								br
+								|заполните заявку on-line или дождитесь звонка банка для заполнения анкеты по телефону.
+				.text__info.text__info-intel
+					|Проверьте, пожалуйста, актуальность телефона, указанного 
+					br
+					|в 
+					a(href="https://www.ulmart.ru/login", target="_blank", class="text__info--link text__info--link__samsung") личном кабинете
+					|, иначе мы не сможем с вами связаться.
+				.row
+					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border") Полные условия акции
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="https://www.ulmart.ru/SamsungGalaxy", target="_blank", class="btn__back-samsung btn-samsung-noborder") Все товары акции
+			.screen
+				span x
+		.tabs__wrapper.tabs__wrapper__offline
+			.container
+				.row
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod.tabs__item--mod-intel
+							.tabs__item__img.tabs__item__img-intel
+								|1
+							.tabs__item__text
+								b Оформите заказ на товар, отмеченный значком
+								br
+								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze-samsung.png", alt="")
+								br
+								|и распечатайте чек на оплату.
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item.tabs__item--mod.tabs__item--mod-intel
+							.tabs__item__img.tabs__item__img-intel
+								|2
+							.tabs__item__text
+								b Подайте заявку в кредитном отделе 
+								br
+								|(подать заявку можно в кредитном отделе центра исполнения заказов Юлмарт (ЦИЗ), при себе необходимо иметь паспорт).
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.tabs__item
+							.tabs__item__img.tabs__item__img-intel
+								|3
+							.tabs__item__text
+								b Забирайте покупку.
+				.row
+					.row
+					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12
+						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border") Полные условия акции
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="https://www.ulmart.ru/SamsungGalaxy", target="_blank", class="btn__back-samsung btn-samsung-noborder") Все товары акции
+		//- .btn__wrapper
+		//- 	.container
+		//- 		.row
+		//- 			.col-lg-2
+		//- 			.col-lg-4.col-md-6.col-sm-6.col-xs-12
+		//- 				a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
+		//- 			.col-lg-4.col-md-6.col-sm-6.col-xs-12
+		//- 				a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
+		//- 			.col-lg-2
+		section.section__goods.section__goods-samsung
+			.container
+				.row
+					h2.products__title.products__title-samsung
+						|Лучшие товары акции
+					+grid-4()
+						each item, number in dataSamsung.slice(0,1)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(1,2)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(2,3)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(3,4)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(4,5)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(5,6)
+							+goods-samsung(item)
+					+grid-4()
+						each item, number in dataSamsung.slice(6,7)
+							+goods-samsung(item)
+		.btn__wrapper.btn__wrapper-samsung
+			.container
+				.row
+					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="#", class="btn__back btn__full btn-samsung-border", id="go-back2") Вернуться к заказу
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
+						a(href="https://www.ulmart.ru/SamsungGalaxy", target="_blank", class="btn__back-samsung btn-samsung-noborder") Все товары акции
+				.row
+					.info-text__center
+						|Отличное предложение — купить телефон Samsung в рассрочку — появилось сегодня у всех поклонников этого бренда. И речь идёт не об обычном телефоне, а о новом смартфоне, совершившем переворот в представлениях о сенсорных телефонах, — Samsung Galaxy S8. Без границ, без рамок, с потрясающей камерой и завораживающим дизайном. Подержав его в руках лишь однажды, никто уже не захочет вернуться к старому мобильнику. Выгодно купить смартфон Samsung в рассрочку — это новая акция магазина Юлмарт.
+
+
+		section.info.info-samsung
+			.container
+				.row
+					.info-title
+						|Характеристики Samsung Galaxy S8
+					.info-text
+						|Покупая Samsung Galaxy в рассрочку, вы приобретаете всё, что предлагают новейшие технологии!
+					ol.info-list.info-list-samsung
+						li.info-item Дизайн. «Безграничный» экран позволяет увидеть почти на 20% больше. Эргономичный корпус даёт возможность пользоваться смартфоном даже одной рукой. Перенос кнопок в виртуальное пространство также увеличивает экран и удовольствие от просмотра видео или игр;
+						li.info-item Многозадачность. Переписывайтесь с друзьями, не отрываясь от просмотра любимого фильма. Общайтесь, делитесь фотографиями, слушайте музыку одновременно! Всё благодаря новейшему процессору — быстрому, но не «прожорливому»;
+						li.info-item Комплектация. В дополнение к телефону вы получите зарядное устройство, гарнитуру со сменными ушными вкладышами, USB-кабель, microUSB-переходник, шпильку для извлечения сим-карты, а также руководство пользователя. И чтобы получить всё это, не надо платить сразу — можно просто купить в рассрочку смартфон Samsung;
+					.info-title
+						|Условия покупки
+					.info-text
+						|Обычно с вопросом, где купить телефон Samsung в рассрочку, обращаются к интернету. Здесь вам предложат массу вариантов. Конечно, если вы ищете рассрочку в Москве или Санкт-Петербурге, всё просто. Жителям же других регионов наверняка будут интересны варианты, предлагающие не только смартфон Samsung Galaxy S8 в рассрочку без переплаты, но и выгодные условия доставки.
+					.info-text
+						|Именно для таких покупателей существуют акции, помогающие совершить выгодную покупку. Нужно просто изучить условия на сайте, оформить заявку и договориться с личным менеджером о рассрочке!
+
+		.hidden-wrap.hidden-wrap-samsung
+			.container
+				.row
+					.hidden-wrap__btn.hidden-wrap__btn-samsung Показать ещё
+
+
+	footer.footer.footer-samsung
+		.container
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					.footer__block
+						.footer__text
+							|Подробная информация об организаторе и условиях акции, об адресах ЦИЗов и графике работ кредитных отделов на сайте –
+							a(href="https://www.ulmart.ru/", target="_blank") ulmаrt.ru.
+							br 
+							| Акция действует при оформлении кредита с 02.10.2016 г. по 15.11.2017 г. Кредит предоставляется банками-партнёрами: АО «ОТП Банк», АО «Альфа-Банк», ООО «Хоум Кредит энд Финанс Банк», АО «Банк Русский Стандарт», КБ «Ренессанс Кредит» (ООО), ПАО «Почта Банк». АО «ОТП Банк», Генеральная лицензия № 2766 Банка России от 27.11.2014 г. Первоначальный взнос 0% от цены товара, срок кредитования 12 месяцев. Процентная ставка 23% годовых, полная стоимость кредита составляет 23,3% годовых, сумма кредита от 2 000 до 300 000 руб. АО «Альфа-Банк», лицензия № 1326 Банка России от 05.03.2012 г. (бессрочная). Первоначальный взнос 0% от цены товара, срок кредитования 12 месяцев. Процентная ставка 22,3% годовых, полная стоимость кредита составляет 22,3% годовых, сумма кредита от 10 000 до 300 000 руб. ООО «Хоум Кредит энд Финанс Банк», лицензия № 316 Банка России от 15.03.2012 г. ОГРН 1027700280937. Первоначальный взнос 0% от цены товара, срок кредитования 12 месяцев. Процентная ставка 9,39%-19.30%. сумма кредита от 2 000 до 200 000 руб. АО «Банк Русский Стандарт», лицензия № 2289 Банка России от 19.11.2014 г. Первоначальный взнос 0% от цены товара, срок кредитования 12 месяцев. Процентная ставка 19,90% годовых, полная стоимость кредита составляет 19,0% годовых, сумма кредита от 3 000 до 200 000 руб. КБ «Ренессанс Кредит» (ООО), лицензия № 3354 Банка России от 19.11.2014 г. Первоначальный взнос 0% от цены товара, срок кредитования 12 месяцев. Процентная ставка 17,78% годовых, полная стоимость кредита составляет 17,78% годовых, сумма кредита от 3 000 до 250 000 руб. ПАО «Почта Банк», лицензия № 650 Банка России от 25.03.2016 г. Первоначальный взнос 0-10% от цены товара, срок кредитования 6,7,8,10,12 месяцев. Процентная ставка 7-57,79% годовых, полная стоимость кредита составляет 7-57,79% годовых, сумма кредита от 3 000 до 300 000 руб. Организатор акции предоставляет скидку на товар, в итоге сумма, подлежащая выплате банку, не превышает первоначальной стоимости товара, при условии, что дополнительные услуги банков не приобретаются. Не является публичной офертой. Банки самостоятельно принимают решение о предоставлении либо отказе в предоставлении кредита без объяснения причин. Подробности приобретения товаров в кредит в рамках акции уточняйте у сотрудников банка. Цены, в т.ч. размер скидок, указаны в рублях с учетом НДС на 02.10.2017 г. для зарегистрированных пользователей. Количество товара ограниченно. Приведённое изображение может отличаться от внешнего вида товара в центрах исполнения заказов. Существенная информация — у консультантов в центрах исполнения заказов Юлмарт и на сайте 
+							a(href="https://www.ulmart.ru/", target="_blank") ulmаrt.ru. 
+							|ООО «Юлмарт РСК», 197227, Санкт-Петербург, пр. Сизова, д. 2, лит. А, ОГРН 1117847607900.
+
+
+include blocks/footer-service/footer-service
