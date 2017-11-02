@@ -43,7 +43,7 @@ body
 								|без процентов и переплат
 		section.make__section
 			h2.make__title
-				|Как купить пылесос в рассрочку
+				|Как купить пылесос по акции 
 			.tabbed
 				.container
 					.row
@@ -56,77 +56,8 @@ body
 								input#tab-nav-2(type='radio', name='tabs', checked='')
 								label(for='tab-nav-2') ОНЛАЙН
 							
-		.tabs__wrapper.tabs__wrapper__online
-			.container
-				.row
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|1
-							.tabs__item__text
-								b Выберите пылесос со значком
-								br
-								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|2
-							.tabs__item__text
-								b Выберите «Самовывоз»
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item
-							.tabs__item__img
-								|3
-							.tabs__item__text
-								b Введите промокод 
-								span 006&nbsp;
-								br
-								|на этапе подтверждения заказа и дождитесь звонка банка для заполнения анкеты по телефону.
-				.text__info
-					|Проверьте, пожалуйста, актуальность телефона, указанного 
-					br
-					|в 
-					a(href="https://www.ulmart.ru/login", target="_blank", class="text__info--link") личном кабинете
-					|, иначе мы не сможем с вами связаться.
-				.row
-					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12.nm
-						a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
-					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
-						a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
-			.screen
-				span x
-		.tabs__wrapper.tabs__wrapper__offline
-			.container
-				.row
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|1
-							.tabs__item__text
-								b Оформите заказ на товар, отмеченный значком 
-								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
-								br
-								|и распечатайте чек на оплату.
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|2
-							.tabs__item__text
-								b Подайте заявку в кредитном отделе 
-								br
-								|(подать заявку можно в кредитном отделе центра исполнения заказов Юлмарт (ЦИЗ), при себе необходимо иметь паспорт).
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item
-							.tabs__item__img
-								|3
-							.tabs__item__text
-								b Забирайте покупку.
-				.row
-					.row
-					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12
-						a(href="https://fast.ulmart.ru/ns/verstka/rassrochka/full_terms.pdf", target="_blank", class="btn__full") Полные условия акции
-					.col-lg-3.col-md-6.col-sm-6.col-xs-12
-						a(href="#", target="_blank", class="btn__back", id="#go-back") Вернуться к заказу
+		+tab-online()
+		+tab-offline()
 		//- .btn__wrapper
 		//- 	.container
 		//- 		.row
@@ -140,7 +71,7 @@ body
 			.container
 				.row
 					h2.products__title
-						|Лучшие модели пылесосов в рассрочку
+						|Лучшие модели пылесосов
 					+grid-4()
 						each item, number in dataPylesosy.slice(0,1)
 							+goods-pylesosy(item)

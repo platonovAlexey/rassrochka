@@ -1,0 +1,249 @@
+.layout_center_wrapper-project.layout_center_wrapper-project-iphone{
+	background: #f5f5f5;
+}
+
+.header-iphone{
+	background: #f3f3f3;
+}
+
+.header-macbook{
+	background: #f3f3f3;
+}
+
+.ulmart__shop.ulmart__shop-iphone{
+	margin: 15px 0 17px;
+	background: none;
+	&:hover{
+		background: none;
+	}
+}
+
+.top__banner.top__banner-iphone{
+	padding: 0;
+	padding-top: 15px;
+}
+
+.title-block.title-block-iphone{
+	padding: 0;
+}
+
+.make__title.make__title-iphone{
+	font-size: 30px;
+	line-height: 46px;
+	font-weight: 300;
+}
+
+.tabbed__wrap.tabbed__wrap-iphone__left > label{
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+.tabbed__wrap.tabbed__wrap-iphone__right > label{
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+.tabbed__wrap.tabbed__wrap-iphone label{
+	background: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	color: #e85d00;
+	border: 1px solid #e85d00;
+}
+
+.tabbed__wrap.tabbed__wrap-iphone > label:hover,
+.tabbed__wrap.tabbed__wrap-iphone > input:checked + label {
+	background: #dd8267;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.tabs__item__img.tabs__item__img-iphone{
+	background: #dd8267;
+	font-size: 29px;
+	width: 60px;
+	height: 60px;
+}
+
+.tabs__item.tabs__item-iphone:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 30px;
+	border: 0.5px dashed #dd8267;
+	width: 100%;
+	left: 209px;
+}
+.tabs__item__text.tabs__item__text-iphone{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	font-weight: 300;
+}
+.tabs__item__text.tabs__item__text-iphone span{
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.text__info.text__info-iphone{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}
+
+.text__info--link.text__info--link-iphone{
+	font-size: 16px;
+	line-height: 24px;
+	color: #0070c9;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.btn__full.btn-iphone-border{
+	background: none;
+	border: 1px solid #333333;
+	color: #333333;
+	border-radius: 25px;
+	padding: 11px 0;
+	font-size: 18px;
+	&:hover{
+		background: #333333;
+		color: #fff;
+	}
+}
+
+.btn__back-iphone.btn-iphone-noborder{
+	padding: 11px 0;
+	background: #333333;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 25px;
+	&:hover{
+		background: none;
+		color: #333333;
+		border: 1px solid #333333;
+	}
+}
+
+.section__goods.section__goods-iphone{
+	background: #f5f5f5;
+}
+
+.products__title.products__title-iphone{
+	font-size: 30px;
+	line-height: 46px;
+	font-weight: 300;
+}
+
+.goods__item.goods__item__auction.goods__item-iphone{
+	padding: 0 10px;
+	border-radius: 5px;
+	&:hover{
+		box-shadow: none;
+	}
+}
+
+.goods__wrap__price.goods__wrap__price-iphone{
+	margin-bottom: 30px;
+}
+
+.goods__wrap__name.goods__wrap__name-iphone{
+	height: 55px;
+}
+
+.goods__picture.goods__picture-iphone{
+	margin: 40px auto;
+}
+
+.goods__name.goods__name-iphone{
+	font-size: 20px;
+	line-height: 25px;
+	color: #333333;
+}
+
+.goods__retail.goods__retail-iphone{
+	font-size: 16px;
+	font-weight: 300;
+	color: #333333;
+}
+
+.goods__start.goods__start-iphone{
+	font-size: 16px;
+	font-weight: 300;
+	color: #333333;
+}
+
+.goods__price__retail.goods__price__retail-iphone{
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.goods__price__start.goods__price__start-iphone{
+	font-size: 24px;
+	font-weight: 500;
+	color: #333;
+}
+
+.goods__link.goods__link-iphone{
+	border-radius: 25px;
+	width: 80%;
+	margin: 0 auto 50px;
+	background: #333333;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 12px;
+	border: 1px solid #333;
+	&:hover{
+		color: #333 !important;
+		background: none;
+		border: 1px solid #333;
+	}
+}
+
+.footer.footer-iphone{
+	background: #ffffff;
+}
+
+.footer__text-iphone{
+	font-size: 12px;
+	line-height: 18px;
+	color: #8e8e8e;
+	font-weight: 300;
+	a{
+		color: #8e8e8e;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer__block-iphone{
+	padding: 80px 0;
+}
+
+.btn__wrapper.btn__wrapper-iphone, .info.info-iphone, .hidden-wrap.hidden-wrap-iphone{
+	background: #f5f5f5;
+}
+
+.hidden-wrap__btn.hidden-wrap__btn-iphone{
+	border-radius: 25px !important;
+	padding: 12px 0;
+}
+
+.goods__wrap__name.goods__wrap__name-macbook{
+	height: 70px;
+}
+
+.goods__name.goods__name-macbook{
+	font-size: 18px;
+	line-height: 22px;
+}

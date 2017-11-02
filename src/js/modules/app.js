@@ -7,6 +7,77 @@
 // 	});
 // }); 
 
+function pushStateToDataLayerCreditSamsungGoToUlmart(event) {
+		return function(label, location) {
+			dataLayer.push({
+							'event':'OWOX',
+							'eventCategory': 'Interactions',
+							'eventAction': 'click',
+							'eventLabel': label,
+							'eventContent': event.target.innerHTML.trim(),
+							'eventLocation': location
+			});
+			// console.log('click logo');
+		}
+};
+
+function pushStateToDataLayerCreditSamsungGoToSamsungBz(event) {
+		return function(label, location) {
+			dataLayer.push({
+							'event':'OWOX',
+							'eventCategory': 'Interactions',
+							'eventAction': 'click',
+							'eventLabel': label,
+							'eventContent': event.target.innerHTML.trim(),
+							'eventLocation': location
+			});
+			// console.log('click logo');
+		}
+};
+
+function pushStateToDataLayerCreditSamsungWathcAllConditions(event) {
+		return function(label, location) {
+			dataLayer.push({
+							'event':'OWOX',
+							'eventCategory': 'Interactions',
+							'eventAction': 'click',
+							'eventLabel': label,
+							'eventContent': event.target.innerHTML.trim(),
+							'eventLocation': location
+			});
+			// console.log('AllConditions');
+		}
+};
+
+function pushStateToDataLayerCreditSamsungGoBackToOrder(event) {
+		return function(label, location) {
+			dataLayer.push({
+							'event':'OWOX',
+							'eventCategory': 'Interactions',
+							'eventAction': 'click',
+							'eventLabel': label,
+							'eventContent': event.target.innerHTML.trim(),
+							'eventLocation': location
+			});
+			// console.log('GoBackToOrder');
+		}
+};
+
+function pushStateToDataLayerCreditSamsungWatchProduct(event) {
+		return function(label, location, id) {
+			dataLayer.push({
+							'event':'OWOX',
+							'eventCategory': 'Interactions',
+							'eventAction': 'click',
+							'eventLabel': label,
+							'eventContent': event.target.innerHTML.trim(),
+							'eventLocation': location,
+							'eventContext': id
+			});
+			// console.log('click goods');
+		}
+};
+
 $('.hidden-wrap__btn').click(function(event) {
   event.preventDefault();
   $(document.body).toggleClass('alternate-color2');
@@ -31,6 +102,7 @@ $('.hidden-wrap__btn').click(function(event) {
 			console.log(from);
 			console.log(fromTo);
 			window.location.href = fromTo;
+			//pushStateToDataLayerCreditSamsungGoBackToOrder();
 			//$('.btn__back [href="#"]').attr("href", "fromTo");
 			// if(history.length > 1){
 			// 		history.go(-2);
@@ -48,12 +120,12 @@ var linkOffline = $('#tab-nav-1');
 var tabWrapper = $('.tabs__wrapper');
 
 linkOnline.click(function(){
-	console.log('click online');
+	// console.log('click online');
 	$('.tabs__wrapper__offline').css('display', 'none');
 	$('.tabs__wrapper__online').css('display', 'block');
 });
 linkOffline.click(function(){
-	console.log('click offline');
+	// console.log('click offline');
 	$('.tabs__wrapper__online').css('display', 'none');
 	$('.tabs__wrapper__offline').css('display', 'block');
 });
@@ -70,6 +142,8 @@ $('.screen span').click(function(){
 	$('.screen').css('display', 'none');
 	$('.tabs__wrapper').css('background-color', '#ffffff');
 })
+
+
 
 // $('.tabs__wrapper').click(function(){
 // 	if($('.screen').css('display', 'block')){

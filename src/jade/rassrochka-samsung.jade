@@ -6,9 +6,9 @@ body#body-samsung
 		.top__line
 			.container
 				.row
-					a(class="ulmart__logo ulmart__shop-samsung" href="https://www.ulmart.ru/", target="_blank")
+					a(class="ulmart__logo ulmart__shop-samsung" href="https://www.ulmart.ru/", target="_blank", onclick="pushStateToDataLayerCreditSamsungGoToUlmart(event) ('GoToUlmart' , 'logo')")
 						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/ulmart-logo-red-samsung.png", alt="logo")
-					a(class="ulmart__shop ulmart__shop-samsung" href="http://www.samsung.com/ru/", target="_blank")
+					a(class="ulmart__shop ulmart__shop-samsung" href="https://www.ulmart.ru/dynamic/page/samsung", target="_blank", onclick="pushStateToDataLayerCreditSamsungGoToSamsungBz(event) ('GoToSamsungBz' , 'logo samsung')")
 						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/logo-samsung.png", alt="")
 		section.top__banner.top__banner-samsung
 			.container
@@ -18,7 +18,7 @@ body#body-samsung
 						img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/samsung-phone-banner.jpg", alt="banner", class="samsung-phone-banner")
 		section.make__section
 			h1.make__title.make__title-samsung
-				|Как купить товар по акции «Кредит без переплат 0•0•12»
+				|Как купить смартфон по акции «Кредит без переплат 0-0-12»
 			.tabbed
 				.container
 					.row
@@ -64,7 +64,7 @@ body#body-samsung
 					|, иначе мы не сможем с вами связаться.
 				.row
 					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12.nm
-						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border") Полные условия акции
+						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border", onclick="pushStateToDataLayerCreditSamsungWathcAllConditions(event) ('CreditSamsungWathcAllConditions' , 'allConditions')") Полные условия акции
 					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
 						a(href="https://www.ulmart.ru/SamsungGalaxy", target="_blank", class="btn__back-samsung btn-samsung-noborder") Все товары акции
 			.screen
@@ -99,7 +99,7 @@ body#body-samsung
 				.row
 					.row
 					.col-lg-3.col-lg-offset-3.col-md-6.col-sm-6.col-xs-12
-						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border") Полные условия акции
+						a(href="https://www.ulmart.ru/special_offers/spb/Credit_bez_pereplat_0_0_12", target="_blank", class="btn__full btn-samsung-border", onclick="pushStateToDataLayerCreditSamsungWathcAllConditions(event) ('CreditSamsungWathcAllConditions' , 'allConditions')") Полные условия акции
 					.col-lg-3.col-md-6.col-sm-6.col-xs-12.nm
 						a(href="https://www.ulmart.ru/SamsungGalaxy", target="_blank", class="btn__back-samsung btn-samsung-noborder") Все товары акции
 		//- .btn__wrapper
@@ -115,7 +115,7 @@ body#body-samsung
 			.container
 				.row
 					h2.products__title.products__title-samsung
-						|Лучшие товары акции
+						|Лучшие смартфоны Samsung по акции
 					+grid-4()
 						each item, number in dataSamsung.slice(0,1)
 							+goods-samsung(item)

@@ -9,6 +9,9 @@
 	.tabs__item.tabs__item--mod:after{
 		display: none;
 	}
+	.tabs__item.tabs__item-iphone:after{
+		display: none;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -107,6 +110,9 @@
 	}
 	.info-text__center{
 		padding: 0 5px;
+	}
+	.tabbed__wrap.tabbed__wrap-iphone__left>label, .tabbed__wrap.tabbed__wrap-iphone>input:checked+label, .tabbed__wrap.tabbed__wrap-iphone>label:hover{
+		border-radius: 0;
 	}
 }
 
