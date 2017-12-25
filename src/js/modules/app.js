@@ -95,7 +95,7 @@ $('.hidden-wrap__btn').click(function(event) {
 		History.Adapter.bind(window,'statechange',function(){
 			var State = History.getState();
 		});
-		$('.btn__back').on('click', function(event) {
+		$('#go-back, #go-back2').on('click', function(event) {
 			event.preventDefault();
 			var from = document.referrer;
 			fromTo = from.toString();
